@@ -1,0 +1,28 @@
+/* 개인정보 처리방침·고객 지원 같은 읽는 페이지 (앱과 같은 색·글꼴) */
+:root{
+  --ground:#F2F4F7; --paper:#FFFFFF; --ink:#14161B; --ink-2:#5A6170; --ink-3:#98A0AE; --line:#E9ECF1; --hl:#FFD43B; --hl-soft:#FFF5C7;
+  --f-ui:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Malgun Gothic",system-ui,sans-serif;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ground:#0E1014; --paper:#171A20; --ink:#ECEFF4; --ink-2:#A6AFBD; --ink-3:#6F7887; --line:#252A32; --hl:#F5C518; --hl-soft:#3A3212}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--f-ui);font-size:15.5px;line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+main{max-width:720px;margin:0 auto;padding:calc(env(safe-area-inset-top) + 20px) 16px calc(env(safe-area-inset-bottom) + 48px)}
+.card{background:var(--paper);border-radius:22px;padding:24px 22px;box-shadow:0 1px 2px rgba(20,22,27,.05),0 10px 30px -16px rgba(20,22,27,.22)}
+.card+.card{margin-top:14px}
+.back{display:inline-block;margin:0 0 14px 4px;color:var(--ink-2);text-decoration:none;font-weight:600;font-size:14px}
+.in-app .back{display:none}
+h1{margin:0 0 4px;font-size:26px;letter-spacing:-.02em;line-height:1.3}
+.meta{margin:0 0 18px;color:var(--ink-3);font-size:13.5px}
+h2{margin:26px 0 6px;font-size:17px;letter-spacing:-.01em}
+h2:first-of-type{margin-top:8px}
+p{margin:0 0 10px;color:var(--ink-2)}
+ul{margin:0 0 10px;padding-left:20px;color:var(--ink-2)}
+li{margin:3px 0}
+b,strong{color:var(--ink)}
+a{color:inherit;text-decoration-color:var(--hl);text-decoration-thickness:2px;text-underline-offset:3px}
+.contact{display:inline-block;margin-top:2px;padding:9px 14px;border-radius:999px;background:var(--hl-soft);color:var(--ink);font-weight:700;text-decoration:none}
+.lang{float:right;font-size:13px;color:var(--ink-3);text-decoration:none;font-weight:600}
